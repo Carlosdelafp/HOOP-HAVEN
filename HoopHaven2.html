@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoop Haven</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(70, 70, 70);
+        }
+        
+        #logo {
+            position: absolute;
+            top: 92px;
+            left: -48px;
+            width: 48px;
+            height: 40px;
+        }
+        
+        #navbar {
+            position: absolute;
+            top: 150px;
+            left: 425px;
+            width: 975px;
+            height: 100px;
+            background-color: orange;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        #navbar a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: white;
+        }
+        
+        #social {
+            position: absolute;
+            top: 150px;
+            right: 290px;
+            font-size: 12px;
+            color: white;
+        }
+        
+        #content {
+            position: absolute;
+            top: 400px;
+            left: 400px;
+            width: 1100px;
+            height: 475px;
+        }
+        
+        #content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #branding {
+            position: absolute;
+            top: 150px;
+            left: 425px;
+            width: 975px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #tagline {
+            position: absolute;
+            top: 275px;
+            left: 425px;
+            width: 975px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        #web-services {
+            position: absolute;
+            top: 955px;
+            left: 345px;
+            width: 1120px;
+            background-color: white;
+            padding: 20px;
+        }
+        
+        #web-services h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            margin-bottom: 10px;
+        }
+        
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        
+        #web-services p {
+            margin-bottom: 10px;
+        }
+        
+        #web-services ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        #web-services ul li {
+            margin-bottom: 5px;
+        }
+        
+        #web-services a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" alt="Hoop Haven Logo">
+    </div>
+    
+    <div id="navbar">
+        <a href="#">Novedades y destacados</a>
+        <a href="#">Hombre</a>
+        <a href="#">Mujer</a>
+        <a href="#">Niño/a</a>
+        <a href="#">Get Better</a>
+        <a href="#">Ofertas</a>
+    </div>
+    
+    <div id="social">
+        <img src="social_logo.png" alt="Instagram Logo"> 
+    </div>
+    
+    <div id="content">
+        <img src="fondoprincipal.jpg" alt="Basketball Images">
+    </div>
+    
+    <div id="branding">
+        <h1>HOOP HAVEN</h1>
+    </div>
+    
+    <div id="tagline">
+        <p>Where dreams take flight on the court.</p>
+    </div>
+
+    <!-- Información sobre servicios web -->
+    <div id="web-services">
+        <h2>Servicios para hacer webs</h2>
+        
+        <button class="accordion">Dominios</button>
+        <div class="panel">
+            <p>Un dominio es el nombre único que identifica a una web en internet y te permite visitarla tecleando en la barra de direcciones del navegador.</p>
+            <ul>
+                <li><a href="https://www.namecheap.com/">Namecheap</a></li>
+                <li><a href="https://www.godaddy.com/">GoDaddy</a></li>
+            </ul>
+        </div>
+        
+        <button class="accordion">Hosting</button>
+        <div class="panel">
+            <p>El hosting es un servicio de alojamiento para páginas web bajo un servidor, que permite publicar un sitio web en Internet.</p>
+            <ul>
+                <li><a href="https://www.hostgator.com/">HostGator</a></li>
+                <li><a href="https://www.bluehost.com/">Bluehost</a></li>
+            </ul>
+        </div>
+        
+        <button class="accordion">Analytics</button>
+        <div class="panel">
+            <p>Analytics es una herramienta de analítica web que proporciona información estadística detallada de un sitio web.</p>
+            <ul>
+                <li><a href="https://analytics.google.com/">Google Analytics</a></li>
+                <li><a href="https://www.matomo.org/">Matomo</a></li>
+            </ul>
+        </div>
+        
+        <button class="accordion">Digitalización de empresas</button>
+        <div class="panel">
+            <p>La digitalización de empresas implica la adopción de tecnologías digitales para mejorar la eficiencia y competitividad de un negocio.</p>
+            <p>Aquí puedes encontrar información sobre la <a href="https://fondoseuropeosdigitalizacion.es/#:~:text=Al%20abrir%20las%20convocatorias%2C%20el,de%20un%20a%C3%B1o%20de%20duraci%C3%B3n">digitalización de empresas</a>.</p>
+            <h3>Slogans de las ventajas de digitalizar tu empresa:</h3>
+            <ul>
+                <li>Aumento de la productividad y eficiencia.</li>
+                <li>Mejora en la toma de decisiones basadas en datos.</li>
+                <li>Mayor alcance y conexión con los clientes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Función para manejar el evento click en los acordeones
+        function toggleAccordion() {
+            this.classList.toggle('active');
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+        }
+
+        // Obtener todos los elementos con la clase "accordion"
+        var acc = document.getElementsByClassName('accordion');
+        var i;
+
+        // Agregar el evento click a cada elemento
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', toggleAccordion);
+        }
+    </script>
+</body>
+</html>
